@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Precios - BOMBOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Titan+One&display=swap" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <style>
+    .titan-one-regular {
+      font-family: "Titan One", sans-serif;
+      font-weight: 400;
+    }
+
+    .poppins-regular {
+      font-family: "Poppins", serif;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-pink-300 bg-cover bg-center bg-no-repeat flex flex-col" style="background-image: url('imagenes/fondo2.png');">
+
+
+<!-- Encabezado -->
+<div class="fixed top-0 w-full bg-pink-500 text-brown-900 p-4 z-20">
+    <header>
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center p-2">
+            <div class="flex items-center mb-4 sm:mb-0">
+                <img src="imagenes/logo.jpg" alt="Logo" class="h-16 w-auto ml-4" />
+                <img src="imagenes/menu.png" alt="Menu" class="w-10 h-10 sm:hidden" onclick="toggleMenu()"/>
+            </div>
+            <nav id="nav-menu" class="hidden sm:flex space-x-4">
+                <a href="index.html" class="block text-base px-2 py-2 hover:text-pink-100 font-semibold underline decoration-pink-500">Inicio</a>
+                <a href="Catalogo.html" class="block px-2 py-2 hover:text-pink-100 font-semibold underline decoration-pink-500">Catálogo</a>
+                <a href="precios.html" class="block px-2 py-2 hover:text-pink-100 font-semibold underline decoration-pink-500">Precios</a>
+                <a href="Contacto.html" class="block px-2 py-2 hover:text-pink-100 font-semibold underline decoration-pink-500">Contacto</a>
+            </nav>
+        </div>
+    </header>
+</div>
+
+<!-- Contenido centrado -->
+ <div class="flex flex-col lg:flex-row justify-center mt-40 mb-16">
+    <div class="flex-none w-full lg:w-1/4 bg-repeat" style="background-image: url('imagenes/fondo.png');"></div>
+    <div class="flex-grow bg-white p-8 shadow-md rounded-lg">
+        <h1 class="text-4xl font-bold text-pink-600 titan-one-regular mb-10">Lista de Precios</h1>
+        <p class="poppins-regular text-justify">Te presentamos nuestra lista de precios base por categoría y tamaño.
+ Recuerda que cada pastel es único, y el precio final puede variar si deseas una decoración especial, temática personalizada o si es para una ocasión especial como bodas o XV años.
+ ¡Estamos felices de ayudarte a diseñar el pastel perfecto para ti!</p>
+        <p>Para un presupuesto más preciso, te recomendamos contactarnos directamente.</p>
+    </div>
+    <div class="flex-none w-full lg:w-1/4 bg-repeat" style="background-image: url('imagenes/fondo.png');"></div>
+</div>
+
+<main class="mt-10 mb-12 container mx-auto px-4 max-w-3xl text-center" style="background-image: url('imagenes/fondo.png');">
+
+    <!-- Sección: Pasteles Tradicionales -->
+    <section class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 mb-8">
+        <h2 class="text-2xl font-semibold text-pink-600 mb-4">🎂 Pastel de tres leches</h2>
+        <ul class="poppins-regular text-left space-y-2 text-gray-800">
+            <li>• 20 personas - <span class="font-semibold">$230</span></li>
+            <li>• 30 personas - <span class="font-semibold">$320</span></li>
+            <li>• 40-45 personas - <span class="font-semibold">$450</span></li>
+            <li>• 50-60 personas - <span class="font-semibold">$750</span></li>
+        </ul>
+    </section>
+
+    <!-- Sección: Pasteles Especiales -->
+    <section class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 mb-8">
+        <h2 class="text-2xl font-semibold text-pink-600 mb-4">🍫 Pastel de chocolate </h2>
+        <ul class="poppins-regular text-left space-y-2 text-gray-800">
+            <li>• 20 personas - <span class="font-semibold">$250</span></li>
+            <li>• 30 personas - <span class="font-semibold">$350</span></li>
+            <li>• 40-45 personas - <span class="font-semibold">$490</span></li>
+            <li>• 50-60 personas - <span class="font-semibold">$790</span></li>
+        </ul>
+    </section>
+
+    <section class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 mb-8">
+        <h2 class="text-2xl font-semibold text-pink-600 mb-4">🌟 Pastel combinado </h2>
+        <ul class="poppins-regular text-left space-y-2 text-gray-800">
+            <li>• 20 personas - <span class="font-semibold">$250</span></li>
+            <li>• 30 personas - <span class="font-semibold">$350</span></li>
+            <li>• 40-45 personas - <span class="font-semibold">$490</span></li>
+            <li>• 50-60 personas - <span class="font-semibold">$790</span></li>
+        </ul>
+    </section>
+
+    <section class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 mb-8">
+        <h2 class="text-2xl font-semibold text-pink-600 mb-4">🎂🧀 Pastel queso de bola </h2>
+        <ul class="poppins-regular text-left space-y-2 text-gray-800">
+            <li>• 20 personas - <span class="font-semibold">$340</span></li>
+            <li>• 30 personas - <span class="font-semibold">$420</span></li>
+            <li>• 40-45 personas - <span class="font-semibold">$590</span></li>
+            <li>• 50-60 personas - <span class="font-semibold">$890</span></li>
+        </ul>
+    </section>
+
+    <section class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 mb-8">
+        <h2 class="text-2xl font-semibold text-pink-600 mb-4">🎂🥥 Pastel de 3 leches y coco </h2>
+        <ul class="poppins-regular text-left space-y-2 text-gray-800">
+            <li>• 20 personas - <span class="font-semibold">$250</span></li>
+            <li>• 30 personas - <span class="font-semibold">$420</span></li>
+            <li>• 40-45 personas - <span class="font-semibold">$380</span></li>
+            <li>• 50-60 personas - <span class="font-semibold">$820</span></li>
+        </ul>
+    </section>
+
+    <section class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 mb-8">
+        <h2 class="text-2xl font-semibold text-pink-600 mb-4">🍠🥥 Pastel de coco y camote </h2>
+        <ul class="poppins-regular text-left space-y-2 text-gray-800">
+            <li>• 20 personas - <span class="font-semibold">$320</span></li>
+            <li>• 30 personas - <span class="font-semibold">$450</span></li>
+            <li>• 40-45 personas - <span class="font-semibold">$560</span></li>
+            <li>• 50-60 personas - <span class="font-semibold">$890</span></li>
+        </ul>
+    </section>
+
+    <section class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 mb-8">
+        <h2 class="text-2xl font-semibold text-pink-600 mb-4">🍰 Fundge </h2>
+        <ul class="poppins-regular text-left space-y-2 text-gray-800">
+            <li>• 20 personas - <span class="font-semibold">$380</span></li>
+            <li>• 30 personas - <span class="font-semibold">$450</span></li>
+        </ul>
+    </section>
+
+    <!-- Sección: Extras Decorativos -->
+    <section class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6">
+        <h2 class="text-2xl font-semibold text-pink-600 mb-4">✨ Extras Decorativos</h2>
+        <ul class="poppins-regular text-left space-y-2 text-gray-800">
+            <li>• Frutas (30-40 personas) - <span class="font-semibold">$200</span></li>
+            <li>• Oblea - <span class="font-semibold">$100</span></li>
+            <li>• Dibujo Simple - <span class="font-semibold">$100</span></li>
+            <li>• Dibujo Elaborado - <span class="font-semibold">$500</span></li>
+            <li>• Fondant - <span class="font-semibold">$250</span></li>
+        </ul>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="p-8 bg-pink-500 text-white">
+  <div class="poppins-regular container mx-auto flex flex-col items-center text-center">
+    <h2 class="text-xl font-bold mb-4">ENCUÉNTRANOS EN:</h2>
+    <ul class="space-y-2">
+      <li>Celular: 991 107 6040</li>
+      <li>Ubicación: C. 20 118, Baca, Yucatán, México CP-97450</li>
+    </ul>
+  </div>
+</footer>
+
+
+<script>
+    // Script básico para menú móvil
+    function toggleMenu() {
+        const nav = document.getElementById('nav-menu');
+        nav.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>

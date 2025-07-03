@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BOMBOM</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-r from-pink-300 via-pink-200 to-pink-300 min-h-screen flex flex-col">
+
+<div class="fixed top-0 w-full bg-pink-500 text-brown-900 p-4 z-20">
+    <header>
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center p-2">
+            <div class="flex items-center mb-4 sm:mb-0">
+                <img src="imagenes/logo.jpg" alt="Logo" class="h-16 w-auto ml-4" />
+                <img src="imagenes/menu.png" alt="Menu" class="w-10 h-10 sm:hidden" onclick="toggleMenu()"/> <!-- Imagen del menú en móviles -->
+            </div>
+
+            <nav id="nav-menu" class="hidden sm:flex space-x-4">
+                <a href="index.html" class="block text-base px-2 py-2 hover:text-pink-100 focus:text-pink-500 underline decoration-pink-500 font-semibold">Inicio</a>
+                <a href="Catalogo.html" class="block px-2 py-2 hover:text-pink-100 focus:text-pink-500 underline decoration-pink-500 font-semibold">Catálogo</a>
+                <a href="precios.html" class="block px-2 py-2 hover:text-pink-100 focus:text-pink-500 underline decoration-pink-500 font-semibold">Precios</a>
+                <a href="Contacto.html" class="block px-2 py-2 hover:text-pink-100 focus:text-pink-500 underline decoration-pink-500 font-semibold">Contacto</a>
+
+            </nav>
+        </div>
+    </header>
+</div>
+<div id="main-content" class="flex-grow">
+<div class="bg-pink-100 py-8 ">
+
+    <!-- Descripción centrada y responsiva -->
+    <div class=" bg-pink-200 py-8 "style="background-image: url('imagenes/fondo2.png');">
+
+   <h3 class="mt-32 text-center text-pink-600 mb-12 text-5xl font-bold">Nuestros Pasteles</h3>
+   <div class="mt-8 container mx-auto ">
+               <h2 class="poppins-regular text-lg mb-4 text-justify  px-4 sm:px-8">Descubre nuestra selección de pasteles tradicionales y personalizados.
+                                       En el catálogo de BOMBOM Pastelería encontrarás una amplia variedad de pasteles diseñados para cada ocasión especial. Desde clásicos sabores que evocan recuerdos familiares hasta creaciones únicas llenas de color y detalles.</h2>
+                <h3 class="poppins-regular text-lg  px-4 sm:px-8"> Explora nuestras creaciones pedidos por nuestros clientes:</h3>
+    </div>
+
+    <div class=" mt-24 container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        <!-- Tarjeta de Producto -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p3.jpg" alt="Pastel Arbolito Navideño" class="w-full h-72 object-cover">
+            <div class="p-4">
+                <h3 class="text-pink-600 font-bold">PASTEL COCA-COLA</h3>
+                <p class="text-gray-600">Desde $ 480.00</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Producto -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p4.jpg" alt="Coffee Cake Manzana" class="w-full h-72 object-cover">
+            <div class="p-4">
+                <h3 class="text-pink-600 font-bold">PASTEL DE LA SIRENITA</h3>
+                <p class="text-gray-600">$ 450.00</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Producto -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p5.jpg" alt="Pastel y Flores" class="w-full h-72 object-cover">
+            <div class="p-4">
+                <h3 class="text-pink-600 font-bold">PASTEL SPONGE BOB</h3>
+                <p class="text-gray-600">$ 300.00</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Producto -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p6.jpg" alt="Pastel Piña Colada" class="w-full h-72 object-cover">
+            <div class="p-4">
+                <h3 class="text-pink-600 font-bold">PASTEL CUMPLEAÑOS</h3>
+                <p class="text-gray-600">Desde $ 350.00</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Producto -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p7.jpg" alt="Pastel Merengue Personalizado" class="w-full h-72 object-cover">
+            <div class="p-4">
+                <h3 class="text-pink-600 font-bold">PASTEL PERSONALIZADO</h3>
+                <p class="text-gray-600">Desde $ 300.00</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Producto -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p8.jpg" alt="Tiramisú Tres Leches" class="w-full h-72 object-cover">
+            <div class="p-4">
+                <h3 class="text-pink-600 font-bold">ANIME</h3>
+                <p class="text-gray-600">Desde $ 350.00</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Producto -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p9.jpg" alt="Mostachón Lotus" class="w-full h-72 object-cover">
+            <div class="p-4">
+                <h3 class="text-pink-600 font-bold">ARIEL</h3>
+                <p class="text-gray-600">Desde $ 300.00</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Producto -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p10.jpg" alt="Zanahoria Lotus" class="w-full h-72 object-cover">
+            <div class="p-4">
+                <h3 class="text-pink-600 font-bold">PASTEL DE XV AÑOS DE FLORES ROJO</h3>
+                <p class="text-gray-600">Desde $ 400.00</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Producto -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p11.jpg" alt="Pastel Coquette" class="w-full h-72 object-cover">
+            <div class="p-4">
+                <h3 class="text-pink-600 font-bold">PASTEL XV AÑOS LILA</h3>
+                <p class="text-gray-600">Desde $ 450.00</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Producto -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p2.jpg" alt="Chocoholic Reno" class="w-full h-72 object-cover">
+            <div class="p-4">
+                <h3 class="text-pink-600 font-bold">JIRASOLES</h3>
+                <p class="text-gray-600">Desde $ 300.00</p>
+            </div>
+        </div>
+        <!-- Tarjeta de Producto -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p14.jpg" alt="Zanahoria Lotus" class="w-full h-72 object-cover">
+            <div class="p-4">
+                <h3 class="text-pink-600 font-bold">BTS</h3>
+                <p class="text-gray-600">Desde $ 350.00</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Producto -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p13.jpg" alt="Pastel Coquette" class="w-full h-72 object-cover">
+            <div class="p-4">
+                <h3 class="text-pink-600 font-bold">PASTEL COQUETTE</h3>
+                <p class="text-gray-600">Desde $ 250.00</p>
+            </div>
+        </div>
+
+    </div>
+<div class="mt-12 container mx-auto px-4 max-w-3xl text-center text-black">
+        <h2 class="text-lg mb-4 text-gray-700">
+            Cada pastel es elaborado con ingredientes de la más alta calidad y atención al detalle, garantizando un sabor que enamora a todos. Explora las opciones disponibles y encuentra el pastel perfecto para tu evento o crea el tuyo.
+        </h2>
+    </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="poppins-regular p-8 bg-pink-500 text-white">
+  <div class="container mx-auto flex flex-col items-center text-center">
+    <h2 class="text-xl font-bold mb-4">ENCUÉNTRANOS EN:</h2>
+    <ul class="space-y-2">
+      <li>Celular: 991 107 6040</li>
+      <li>Ubicación: C. 20 118, Baca, Yucatán, México CP-97450</li>
+    </ul>
+  </div>
+</footer>
+
+
+<script>
+
+
+    // Script para el menú
+    let menuVisible = false; // Variable para controlar la visibilidad del menú
+
+    function toggleMenu() {
+        const nav = document.getElementById('nav-menu');
+        menuVisible = !menuVisible; // Cambia el estado de visibilidad
+        nav.classList.toggle('hidden');
+
+        // Cambia el margen superior del main dependiendo de la visibilidad del menú
+        const mainContent = document.getElementById('main-content');
+        mainContent.classList.toggle('mt-96', menuVisible); // Aplica mt-96 si el menú está visible
+        mainContent.classList.toggle('mt-40', !menuVisible); // Aplica mt-40 si el menú no está visible
+    }
+</script>
+</body>
+</html>

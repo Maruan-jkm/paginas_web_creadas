@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BOMBOM</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Titan+One&display=swap" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <style>
+    .titan-one-regular {
+      font-family: "Titan One", sans-serif;
+      font-weight: 400;
+    }
+
+    .poppins-regular {
+      font-family: "Poppins", serif;
+      font-weight: 400;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-r from-pink-300 via-pink-200 to-pink-300 min-h-screen justify-center relative">
+
+<div class="fixed top-0 w-full bg-pink-500 text-brown-900 p-4 z-20">
+    <header>
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center p-2">
+            <div class="flex items-center mb-4 sm:mb-0">
+                <img src="imagenes/logo.jpg" alt="Logo" class="h-16 w-auto ml-4" />
+                <img src="imagenes/menu.png" alt="Menu" class="w-10 h-10 sm:hidden" onclick="toggleMenu()"/> <!-- Imagen del menú en móviles -->
+            </div>
+
+            <nav id="nav-menu" class="hidden sm:flex space-x-4">
+                <a href="index.html" class="block text-base px-2 py-2 hover:text-pink-100 focus:text-pink-500 underline decoration-pink-500 font-semibold">Inicio</a>
+                <a href="Catalogo.html" class="block px-2 py-2 hover:text-pink-100 focus:text-pink-500 underline decoration-pink-500 font-semibold">Catálogo</a>
+                <a href="precios.html" class="block px-2 py-2 hover:text-pink-100 focus:text-pink-500 underline decoration-pink-500 font-semibold">Precios</a>
+                <a href="Contacto.html" class="block px-2 py-2 hover:text-pink-100 focus:text-pink-500 underline decoration-pink-500 font-semibold">Contacto</a>
+
+            </nav>
+        </div>
+    </header>
+</div>
+
+<div id="main-content" class="relative w-full bg-gray-300 mb-4 mt-40 overflow-hidden">
+    <img id="carousel-image" src="imagenes/pastel1.jpg" alt="Pasteles" class="w-full sm:h-96 h-44 object-cover transition-opacity duration-500">
+</div>
+
+<!-- Puntos dinámicos -->
+<div class="flex justify-center space-x-2 mb-6">
+    <span class="dot h-2 w-2 bg-gray-400 rounded-full cursor-pointer transition duration-300"></span>
+    <span class="dot h-2 w-2 bg-gray-400 rounded-full cursor-pointer transition duration-300"></span>
+    <span class="dot h-2 w-2 bg-gray-400 rounded-full cursor-pointer transition duration-300"></span>
+</div>
+
+<!-- Contenido principal -->
+<div class="flex flex-col lg:flex-row justify-center mb-16">
+    <div class="flex-none w-full lg:w-1/4 bg-repeat" style="background-image: url('imagenes/fondo.png');"></div>
+    <div class="flex-grow bg-white p-8 shadow-md rounded-lg">
+        <h1 class="text-center text-pink-600  titan-one-regular text-5xl font-bold mb-8">¡Bienvenidos a BOMBOM!</h1>
+        <p class="text-justify">Nos alegra que estés aquí. En nuestra página podrás descubrir una deliciosa variedad de pasteles tradicionales, ideales para cualquier ocasión especial. Explora nuestro catálogo y déjate inspirar por los sabores y diseños que ofrecemos.
+            Si alguno te encanta o desea personalizar el tuyo, no dudes en visitarnos —estamos listos para endulzar tus momentos más importantes.Confirma tu pedido con un anticipo del 50% al pagar en nuestra tienda.</p>
+        <h2 class="mt-8 text-xl text-center"><b>Endulza tus momentos más especiales con nuestros pasteles artesanales.</b> 🍰</h2>
+    </div>
+    <div class="flex-none w-full lg:w-1/4 bg-repeat" style="background-image: url('imagenes/fondo.png');"></div>
+</div>
+
+<h3 class="mt-24 text-center text-pink-600 text-5xl font-bold">Nuestra historia</h3>
+<div class="flex flex-col lg:flex-row mt-8 container mx-auto items-center">
+    <h2 class="poppins-regular text-lg mb-4 text-justify px-4 sm:px-8"> <!-- Agregado px-4 sm:px-8 -->
+        Pastelería BOMBOM abrió sus puertas en el año 2020, con el sueño de llevar momentos dulces y memorables a las mesas de nuestros clientes. Fundada por Martha Uc, una apasionada de la repostería, BOMBOM nació como un pequeño taller enfocado en la elaboración de pasteles tradicionales con un toque único y personal...
+    </h2>
+</div>
+
+
+<!-- Primera Sección -->
+<div class="flex flex-col lg:flex-row items-center justify-between mx-auto container mt-24 mb-16" style="background-image: url('imagenes/fondo2.png');">
+    <div class="lg:w-1/2 px-4">
+        <h2 class="text-3xl font-bold text-pink-600 mb-4 text-center lg:text-left">De un taller a un hogar de celebraciones</h2>
+        <p class="poppins-regular text-lg  mb-4 text-justify">
+            A lo largo de los años, BOMBOM ha crecido gracias a la confianza y cariño de nuestros clientes. Nos hemos convertido en un referente para celebraciones importantes como cumpleaños, bodas y eventos especiales, creando pasteles que cuentan historias y celebran momentos inolvidables.
+            Hoy, continuamos comprometidos con nuestra visión original: ofrecer productos que enamoren a cada bocado, adaptándonos a las preferencias y necesidades de quienes confían en nosotros.
+        </p>
+    </div>
+    <div class="lg:w-1/2 px-4 mt-6 lg:mt-0 flex justify-center">
+        <img src="imagenes/tienda.jpg" alt="Descripción de la imagen" class="w-96 h-96 rounded-lg object-cover shadow-lg" />
+    </div>
+</div>
+
+<!-- Segunda Sección -->
+<div class="flex flex-col lg:flex-row items-center justify-between mx-auto container mt-40 mb-24"style="background-image: url('imagenes/fondo2.png');">
+    <div class="lg:w-1/2 px-4 flex justify-center">
+        <img src="imagenes/local.jpg" alt="Descripción de la imagen" class="w-96 h-96 rounded-lg object-cover shadow-lg" />
+    </div>
+    <div class="lg:w-1/2 px-4 mt-6 lg:mt-0">
+        <h2 class="text-3xl font-bold text-pink-600 mb-4 text-center lg:text-left">Compromiso con la calidad y la personalización</h2>
+        <p class="poppins-regular text-lg  mb-4 text-justify">
+            Desde nuestros inicios, hemos creído en la importancia de ofrecer más que un producto: una experiencia. Cada cliente que llega a BOMBOM puede confiar en que recibirá un pastel único, hecho a la medida de sus deseos, con los mejores ingredientes y un toque personal que lo hace inigualable.
+        </p>
+    </div>
+</div>
+
+<div class="bg-pink-50 py-8" style="background-image: url('imagenes/fondo2.png');">
+    <h2 class="text-center text-5xl font-bold text-pink-600 mt-12 mb-24">Nuestros productos más destacados</h2>
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p1.jpg" alt="Pastel de Baby-Shark" class="w-full h-72 object-cover">
+            <div class="p-4 text-center">
+                <p class="text-red-900 text-lg font-semibold">Pastel de Baby-Shark</p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p10.jpg" alt="Pastel de Girasol" class="w-full h-72 object-cover">
+            <div class="p-4 text-center">
+                <p class="text-red-900 text-lg font-semibold">Pastel XV años</p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="imagenes/p3.jpg" alt="Pastel de Coca-Cola" class="w-full h-72 object-cover">
+            <div class="p-4 text-center">
+                <p class="text-red-900 text-lg font-semibold">Pastel de Coca-Cola</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="p-8 bg-pink-500 text-white">
+  <div class="poppins-regular container mx-auto flex flex-col items-center text-center">
+    <h2 class="text-xl font-bold mb-4">ENCUÉNTRANOS EN:</h2>
+    <ul class="space-y-2">
+      <li>Celular: 991 107 6040</li>
+      <li>Ubicación: C. 20 118, Baca, Yucatán, México CP-97450</li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Script para el carrusel -->
+<script>
+    const images = [
+        'imagenes/pastel1.jpg',
+        'imagenes/pastel2.jpg',
+        'imagenes/pastel3.jpg'
+    ];
+    let currentIndex = 0;
+
+    const carouselImage = document.getElementById('carousel-image');
+    const dots = document.querySelectorAll('.dot');
+
+    function updateCarousel() {
+        carouselImage.src = images[currentIndex];
+
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('bg-black', index === currentIndex);
+            dot.classList.toggle('bg-gray-400', index !== currentIndex);
+        });
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+    }
+
+    setInterval(nextImage, 3000);
+    updateCarousel();
+
+    // Script para el menú
+    let menuVisible = false;
+
+    function toggleMenu() {
+        const nav = document.getElementById('nav-menu');
+        menuVisible = !menuVisible;
+        nav.classList.toggle('hidden');
+
+        const mainContent = document.getElementById('main-content');
+        mainContent.classList.toggle('mt-96', menuVisible);
+        mainContent.classList.toggle('mt-40', !menuVisible);
+    }
+</script>
+</body>
+
+</html>
